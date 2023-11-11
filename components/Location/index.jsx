@@ -7,14 +7,16 @@ import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import WhereToVoteIcon from "@mui/icons-material/WhereToVote";
 import { useRouter } from "next/router";
-import Button from "@mui/material/Button";
-import { ImgOverlay } from "image-overlay-react";
-import "image-overlay-react/dist/index.css";
 
 const connectivity = [
-  "Highway - 700 mtrs",
-  "Singasandra metro station - 1.5 Kms",
-  "Hosa road metro station - 2.4 Kms",
+  "Christ College Kengeri - 5 min",
+  "Don Bosco Engineering College - 5 min",
+  "Global Village Tech Park - 5 min",
+  "Bidadi Industrial Estate Bosch Ltd. - 10 min",
+  "Wonderla - 15 min",
+  "Gopalan Arcade Mall - 20 min",
+  "Rajarajeswari Medical College & Hospital - 5 min",
+  "BGS Super Speciality Hospitals - 20 min",
 ];
 
 const Index = ({ isMobile }) => {
@@ -35,26 +37,9 @@ const Index = ({ isMobile }) => {
           </center>
           <Paper
             variant="outlined"
-            // onClick={() => router.push("/assets/location-map.jpg")}
+            onClick={() => router.push("/assets/location-map.jpg")}
           >
-            <ImgOverlay
-              imgSrc="/assets/location-map.jpg"
-              width="100%"
-              height="auto"
-              bgColor="black"
-              position="bottom"
-              fColor="white"
-            >
-              <Button
-                onClick={() => showDialog("Request Map View")}
-                variant="contained"
-                disableElevation
-                size="small"
-              >
-                Request Plan Details
-              </Button>
-            </ImgOverlay>
-            {/* <picture>
+            <picture>
               <source srcSet="/assets/location-map.jpg" type="image/jpg" />
               <img
                 src="/assets/location-map.jpg"
@@ -62,10 +47,9 @@ const Index = ({ isMobile }) => {
                 style={{
                   width: "100%",
                   maxWidth: "1000px",
-                  filter: "blur(10px)",
                 }}
               />
-            </picture> */}
+            </picture>
           </Paper>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -77,7 +61,7 @@ const Index = ({ isMobile }) => {
             sx={{ height: { xs: "300px", md: "100%" } }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.543110568738!2d77.6415061!3d12.872759799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6b4cc97ef75b%3A0xee9d9ec519273461!2sManipal%20County!5e0!3m2!1sen!2sin!4v1696826654537!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.312072895671!2d77.449695311761!3d12.887643687367632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fae544ccce1%3A0x3ccc4b33c5d0e398!2sBrigade%20Horizon%20Bengaluru!5e0!3m2!1sen!2sin!4v1699676705232!5m2!1sen!2sin"
               style={{
                 border: 0,
                 width: "100%",

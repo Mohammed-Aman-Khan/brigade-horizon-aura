@@ -63,7 +63,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Mahindra Malgudi</title>
+        <title>Aura At Brigade Horizon</title>
       </Head>
       <Navbar>
         <Home

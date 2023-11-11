@@ -212,7 +212,7 @@ const Index = ({ showDialog, onClose, isMobile }) => {
           }}
           disableElevation
           variant="contained"
-          href="https://api.whatsapp.com/send?phone=+919663098906&text=Hi I am Interested in Mahindra Malgudi, at Manipal County Resort, Bangalore. Please share the details."
+          href="https://api.whatsapp.com/send?phone=+919663098906&text=Hi I am Interested in Aura At Brigade Horizon, at Mysore Road, Bangalore. Please share the details."
           target="_blank"
           startIcon={<WhatsAppIcon />}
         >
@@ -311,7 +311,7 @@ const Index = ({ showDialog, onClose, isMobile }) => {
             }}
             disableElevation
             variant="contained"
-            href="https://api.whatsapp.com/send?phone=+919663098906&text=Hi I am Interested in Mahindra Malgudi, at Manipal County Resort, Bangalore. Please share the details."
+            href="https://api.whatsapp.com/send?phone=+919663098906&text=Hi I am Interested in Aura At Brigade Horizon, at Mysore Road, Bangalore. Please share the details."
             target="_blank"
             startIcon={<WhatsAppIcon />}
           >

@@ -11,9 +11,9 @@ export default async function handler(req, res) {
     });
 
     let info = await transporter.sendMail({
-      from: "Mahindra Malgudi Website <kyofighter@outlook.com>",
+      from: "Aura At Brigade Horizon Website <kyofighter@outlook.com>",
       to: "dadapeer78666@gmail.com",
-      subject: "New Form Submission for Mahindra Malgudi",
+      subject: "New Form Submission for Aura At Brigade Horizon",
       html: `
         <h3>I am interested in this property.</h3>
         <br><br>

@@ -1,9 +1,6 @@
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { useRouter } from "next/router";
-import Button from "@mui/material/Button";
-import { ImgOverlay } from "image-overlay-react";
-import "image-overlay-react/dist/index.css";
 
 const Index = ({ isMobile }) => {
   const router = useRouter();
@@ -18,25 +15,19 @@ const Index = ({ isMobile }) => {
         <br />
         <Paper
           variant="outlined"
-          // onClick={() => router.push("/assets/master-plan.png")}
+          onClick={() => router.push("/assets/master-plan.png")}
         >
-          <ImgOverlay
-            imgSrc="/assets/master-plan.png"
-            width="100%"
-            height="auto"
-            bgColor="black"
-            position="bottom"
-            fColor="white"
-          >
-            <Button
-              onClick={() => showDialog("Request Map View")}
-              variant="contained"
-              disableElevation
-              size="small"
-            >
-              Request Master Plan
-            </Button>
-          </ImgOverlay>
+          <picture>
+            <source srcSet="/assets/master-plan.jpg" type="image/jpg" />
+            <img
+              src="/assets/master-plan.jpg"
+              alt="Master Plan"
+              style={{
+                width: "100%",
+                maxWidth: "1000px",
+              }}
+            />
+          </picture>
         </Paper>
       </center>
     </Paper>

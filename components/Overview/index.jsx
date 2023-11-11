@@ -1,19 +1,13 @@
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 
 const Index = ({ showDialog, isMobile }) => {
   return (
     <Paper elevation={0} square sx={{ padding: "30px" }}>
       <Typography id="Overview" variant="h4">
-        Mahindra Malgudi
+        Aura At Brigade Horizon
       </Typography>
-      <Typography variant="h6">
-        Near Manipal County Resort, Bangalore
-      </Typography>
+      <Typography variant="h6">Near Mysore Road, Bangalore</Typography>
       <br />
       <Typography
         sx={{
@@ -21,11 +15,12 @@ const Index = ({ showDialog, isMobile }) => {
           // maxWidth: "750px",
         }}
       >
-        Mahindra Lifespaces&apos; Malgudi offers opulent apartments on Hosur
-        Road that offer an unmatched lifestyle of grandeur mixed with
-        tranquility. Enter a realm of lush surroundings and magnificent
-        architecture. Situated on Hosur Road, close to Electronics City in
-        Bangalore&apos;s Manipal County.
+        A UNIQUE LIFESTYLE Tucked Away in the Coziness of the Community. At
+        Brigade Horizon, take advantage of a special opportunity to create a
+        community while spending time with loved ones. Discover more fulfilling
+        human experiences in our opulent three and four bedroom homes at Aura.
+        Savor quiet times and social interactions while honoring the harmony of
+        solitude and company.
       </Typography>
       <br />
     </Paper>

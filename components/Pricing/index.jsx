@@ -24,18 +24,13 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 const pricing = [
   {
     type: "3 BHK",
-    area: "1750-1800 Sq. Ft.",
-    price: "1.8 Cr* Onwards",
-  },
-  {
-    type: "3.5 BHK",
-    area: "2000-2100 Sq. Ft.",
-    price: "2.1 Cr* Onwards",
+    area: "1438-1627 Sq. Ft.",
+    price: "1.04-1.29 Cr* Onwards",
   },
   {
     type: "4 BHK",
-    area: "2300-2400 Sq. Ft.",
-    price: "2.45 Cr* Onwards",
+    area: "2603-3215 Sq. Ft.",
+    price: "2.19-2.59 Cr* Onwards",
   },
 ];
 
@@ -44,7 +39,7 @@ const Index = ({ showDialog, isMobile }) => {
     <Paper elevation={0} square sx={{ padding: "30px 10px" }}>
       <center>
         <Typography variant="h4" id="Price">
-          Mahindra Malgudi Price
+          Aura At Brigade Horizon Price
         </Typography>
       </center>
       <br />

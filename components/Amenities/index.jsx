@@ -8,31 +8,25 @@ const amenities = [
     name: "Swimming Pool",
   },
   {
-    name: "Jogging Path",
+    name: "Sun Deck",
   },
   {
-    name: "Curated Parks",
+    name: "Indoor Games",
   },
   {
-    name: "World Class Gym",
+    name: "Gym",
+  },
+  {
+    name: "Activity Lawn",
+  },
+  {
+    name: "Convenience Store",
+  },
+  {
+    name: "Yoga Deck",
   },
   {
     name: "Multipurpose Hall",
-  },
-  {
-    name: "Landscape Gardens",
-  },
-  {
-    name: "Kids Pool",
-  },
-  {
-    name: "Party Lawn",
-  },
-  {
-    name: "Play Court",
-  },
-  {
-    name: "Kids Play Area",
   },
 ];
 

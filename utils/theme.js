@@ -1,12 +1,9 @@
 import { createTheme } from "@mui/material";
+import { cyan } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: "#66bb6a",
-      light: "#81c784",
-      dark: "#388e3c",
-    },
+    primary: cyan,
   },
   typography: {
     button: {

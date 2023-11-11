@@ -15,6 +15,8 @@ const images = [
   "/assets/carousel/4.webp",
   "/assets/carousel/5.webp",
   "/assets/carousel/6.webp",
+  "/assets/carousel/7.webp",
+  "/assets/carousel/8.webp",
 ];
 
 const Index = ({ isMobile }) => {

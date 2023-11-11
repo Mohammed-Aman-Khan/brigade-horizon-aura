@@ -8,15 +8,11 @@ import "image-overlay-react/dist/index.css";
 const floorPlans = [
   {
     name: "3 BHK | 1750 Sq. Ft.",
-    image: "/assets/floor-plans/1750.png",
-  },
-  {
-    name: "3.5 BHK | 2000 Sq. Ft.",
-    image: "/assets/floor-plans/2000.png",
+    image: "/assets/floor-plans/1438.png",
   },
   {
     name: "4 BHK | 2300 Sq. Ft.",
-    image: "/assets/floor-plans/2300.png",
+    image: "/assets/floor-plans/2603.png",
   },
 ];
 
@@ -25,7 +21,7 @@ const Index = ({ showDialog, isMobile }) => {
     <Paper elevation={0} square sx={{ padding: "30px 10px" }}>
       <center>
         <Typography variant="h4" id="FloorPlans">
-          Mahindra Malgudi Floor Plans
+          Aura At Brigade Horizon Floor Plans
         </Typography>
       </center>
       <br />
