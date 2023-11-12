@@ -20,9 +20,7 @@ export default async function handler(req, res) {
         <h2>Details</h2>
         <br>
         <h3>Name          : ${req.body.name}</h3>
-        <h3>Email         : ${req.body.email}</h3>
         <h3>Mobile Number : ${req.body.mobileNumber}</h3>
-        <h3>Comments      : ${req.body.comments}</h3>
       `,
     });
 
