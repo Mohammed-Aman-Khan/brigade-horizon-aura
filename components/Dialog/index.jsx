@@ -26,9 +26,7 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
   const { enqueueSnackbar } = useSnackbar();
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
-  const [comments, setComments] = useState("");
   const [loading, setLoading] = useState(false);
 
   const showError = (msg) => {
@@ -40,14 +38,6 @@ const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
     try {
       if (!name) {
         showError("Name is required");
-        return;
-      }
-      if (!email) {
-        showError("Email is required");
-        return;
-      }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showError("Invalid Email");
         return;
       }
       if (!mobileNumber) {
@@ -63,9 +53,7 @@ const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
 
       const response = await axios.post("/api/submit-form", {
         name,
-        email,
         mobileNumber,
-        comments,
       });
 
       if (response.data.status) {
@@ -211,14 +199,6 @@ const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
                   onChange={(e) => setName(e.target.value)}
                   sx={{ marginBottom: "10px" }}
                 />
-                <TextField
-                  fullWidth
-                  placeholder="Email *"
-                  variant="standard"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  sx={{ marginBottom: "10px" }}
-                />
                 <div
                   style={{
                     display: "flex",
@@ -252,15 +232,6 @@ const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
                     }}
                   />
                 </div>
-                <TextField
-                  fullWidth
-                  multiline
-                  minRows={1}
-                  placeholder="Comments"
-                  variant="standard"
-                  value={comments}
-                  onChange={(e) => setComments(e.target.value)}
-                />
               </Grid>
             </Grid>
           </DialogContent>
