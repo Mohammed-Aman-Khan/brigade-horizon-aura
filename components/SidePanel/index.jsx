@@ -20,9 +20,7 @@ import Flash from "react-reveal/Flash";
 const Index = ({ showDialog, onClose, isMobile }) => {
   const { enqueueSnackbar } = useSnackbar();
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
-  const [comments, setComments] = useState("");
   const [loading, setLoading] = useState(false);
 
   const showError = (msg) => {
@@ -34,14 +32,6 @@ const Index = ({ showDialog, onClose, isMobile }) => {
     try {
       if (!name) {
         showError("Name is required");
-        return;
-      }
-      if (!email) {
-        showError("Email is required");
-        return;
-      }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showError("Invalid Email");
         return;
       }
       if (!mobileNumber) {
@@ -57,9 +47,7 @@ const Index = ({ showDialog, onClose, isMobile }) => {
 
       const response = await axios.post("/api/submit-form", {
         name,
-        email,
         mobileNumber,
-        comments,
       });
 
       if (response.data.status) {
@@ -85,15 +73,6 @@ const Index = ({ showDialog, onClose, isMobile }) => {
         variant="standard"
         value={name}
         onChange={(e) => setName(e.target.value)}
-      />
-      <br />
-      <br />
-      <TextField
-        fullWidth
-        label="Email *"
-        variant="standard"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
       />
       <br />
       <br />
@@ -126,16 +105,6 @@ const Index = ({ showDialog, onClose, isMobile }) => {
           }}
         />
       </div>
-      <br />
-      <TextField
-        fullWidth
-        multiline
-        minRows={3}
-        label="Comments"
-        variant="standard"
-        value={comments}
-        onChange={(e) => setComments(e.target.value)}
-      />
       <br />
       <br />
       <br />
