@@ -51,6 +51,18 @@ const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
 
       setLoading(true);
 
+      const formData = new FormData(e.target);
+      const formDataObject = {};
+      formData.forEach((value, key) => {
+        formDataObject[key] = value;
+      });
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "formSubmission",
+        formData: formDataObject,
+      });
+
       const response = await axios.post("/api/submit-form", {
         name,
         mobileNumber,
