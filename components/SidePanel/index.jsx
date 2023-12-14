@@ -68,6 +68,7 @@ const Index = ({ showDialog, onClose, isMobile }) => {
   const form = (
     <form onSubmit={submit}>
       <TextField
+        name="name"
         fullWidth
         label="Name *"
         variant="standard"
@@ -92,6 +93,7 @@ const Index = ({ showDialog, onClose, isMobile }) => {
           +91
         </Typography>
         <TextField
+          name="mobileNumber"
           fullWidth
           label="Mobile Number *"
           variant="standard"

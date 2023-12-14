@@ -191,6 +191,7 @@ const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
                   </AlertTitle>
                 </Alert>
                 <TextField
+                  name="name"
                   size="small"
                   fullWidth
                   placeholder="Name *"
@@ -216,6 +217,7 @@ const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
                     +91
                   </Typography>
                   <TextField
+                    name="mobileNumber"
                     fullWidth
                     placeholder="Mobile Number *"
                     variant="standard"
