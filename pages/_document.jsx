@@ -5,6 +5,10 @@ const Document = () => {
   return (
     <Html>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=GTM-W4X8R3S5"
+        />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
