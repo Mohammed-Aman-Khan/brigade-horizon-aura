@@ -60,6 +60,8 @@ const Index = ({ onClose, pdfDownload, dialogTitle, isMobile }) => {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: "formSubmission",
+        formType: "Contact Us Form",
+        formPosition: "Dialog",
         formData: formDataObject,
       });
 

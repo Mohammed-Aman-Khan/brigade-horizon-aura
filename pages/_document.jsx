@@ -9,6 +9,14 @@ const Document = () => {
           async
           src="https://www.googletagmanager.com/gtag/js?id=GTM-W4X8R3S5"
         />
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {dataLayer.push(arguments)};
+            gtag('js', new Date());
+            gtag('config', 'GTM-W4X8R3S5');
+          `}
+        </script>
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

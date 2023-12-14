@@ -54,6 +54,8 @@ const Index = ({ showDialog, onClose, isMobile }) => {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: "formSubmission",
+        formType: "Contact Us Form",
+        formPosition: "Side Panel",
         formData: formDataObject,
       });
 
